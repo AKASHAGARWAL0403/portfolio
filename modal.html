@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style type="text/css">
+  
+  body {
+      background-image: url(b18.jpg);
+      
+     
+  }
+ 
+.a {
+     background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    color: #f1f1f1;
+    width: 434px;
+    padding: 20px;
+
+}
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+     z-index:999;
+     
+}
+
+li {
+    float: left;
+}
+
+li a {
+     display:block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+.cl1 {
+      text-align: center;
+      
+      margin-left: 25px;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+    }
+    .cl1:hover {
+      text-decoration: underline;
+      background-color: grey;
+      border-radius: 20%;
+    }
+
+
+</style>
+<body>
+ <ul>
+     <li><a href="portfolio.html" id="a1" class="cl1">HOME</a></li>
+   <li><a href="modal.html" class="cl1" target="_blank">GALLERY</a></li>
+   <li><a href="qualification.html" class="cl1">QUALIFICATIONS</a></li>
+ 
+     </ul>
+<div class="w3-container">
+  <h1><b>IMAGE GALLERY</b></h1>
+  <p style="font-size: 20px">My journey of life</p>
+</div>
+
+<div class="w3-row-padding w3-coloumn-padding">
+ <div class="w3-container w3-third" style="float: left;">
+    <img src="a1.jpg.jpg" style="height:370px;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+    <div class="a" style="transform: translate(0px,-63px);position: absolute;"><b>Roadtrip Trip</b></div>
+ </div>
+ <div class="w3-container w3-third" style="float: left;">
+    <img src="a14.jpg" style=" height:370px;cursor:pointer;position: relative; right: 25px;" 
+    onclick="onClick(this)" class="w3-hover-opacity ">
+    <div class="a" style="transform: translate(-24px,-63px);position: absolute; width: 482px;"><b>Sometimes you need to carry the load of your friend</b></div>
+ </div>
+ <div class="w3-container w3-third" style="float: left;">
+    <img src="a11.jpg" style="height: 370px;cursor:pointer; position:relative; right: 25px" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+   <div class="a" style="transform: translate(-24px,-63px);position: absolute; width: 482px;"><b>First outing with IIT ISM guys</b></div>
+ </div>
+ 
+ <div class="w3-container w3-third" style="float: left;">
+    <img src="a4.jpg" style="height: 330px;cursor:pointer;position: relative;top: 20px; " 
+    onclick="onClick(this)" class="w3-hover-opacity">
+    <div class="a" style="transform: translate(-0px,-43px);position: absolute; width: 482px;"><b>Caught in a candid</b></div>
+ </div>
+   
+     <div class="w3-container w3-third" style="float: left;">
+    <img src="a6.jpg" style="height: 360px;cursor:pointer; position: relative;top: 20px;left:19px;transform: scaleX(1.1); " 
+    onclick="onClick(this)" class="w3-hover-opacity">
+     <div class="a" style="transform: translate(-0px,-43px);position: absolute; width: 472px;"><b>A Funny One</b></div>
+  </div>
+
+  <div class="w3-container w3-third" >
+    <img src="a7.jpg" style="height: 370px;cursor:pointer; position: relative;top: 20px; " 
+    onclick="onClick(this)" class="w3-hover-opacity">
+     <div class="a" style="transform: translate(-0px,-43px);position: absolute; width: 495px;"><b>Quality Time Spend With Family</b></div>
+</div>
+<div class="w3-container w3-third" style="float: left;">
+    <img src="a13.jpg" style="width: 435px;cursor:pointer; position: relative;top: 40px; left: 21px; transform: scale(1.1,1); " 
+    onclick="onClick(this)" class="w3-hover-opacity">
+      <div class="a" style="transform: translate(0px,-20px);position: absolute; width: 477px;"><b>Our First Robo</b></div>
+</div>
+<div class="w3-container w3-third" style="float: left;">
+    <img src="a10.jpg" style="width: 470px;cursor:pointer; position: relative;top: 40px; " 
+    onclick="onClick(this)" class="w3-hover-opacity">
+      <div class="a" style="transform: translate(-0px,-8px);position: absolute; width: 470px;"><b>Better to take selfies than get bored</b></div>
+</div>
+<div class="w3-container w3-third" style="float: left;">
+    <img src="a15.jpg" style="width: 400px;cursor:pointer;position: relative;top: 54px ;left:35px; transform: scale(1.2,1.1); " 
+    onclick="onClick(this)" class="w3-hover-opacity">
+      <div class="a" style="transform: translate(-7px,10px);position: absolute; width: 480px;"><b>Copying friend style #GAURAV</b></div>
+</div>
+
+<div id="modal01" class="w3-modal" onclick="this.style.display='none'"">
+ 
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style="width:100%">
+  </div>
+</div>
+ 
+<script>
+
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+</script>
+            
+</body>
+</html>
